@@ -1,0 +1,22 @@
+h1 {
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 150px;
+}
+
+.items-container {
+    text-align: left;
+}
+
+.custom-row {
+    margin: 10px 5px
+}
+
+.custom-button {
+    min-width: 80px;
+}
