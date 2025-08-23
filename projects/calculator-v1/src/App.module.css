@@ -1,0 +1,12 @@
+.calculator{
+   border: 1px solid rgb(90, 87, 87);
+   width: 200px;
+   border-radius: 5px;
+   padding: 10px;
+   margin: auto; /* centers horizontally */
+   position: absolute; /* centers vertically */
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
