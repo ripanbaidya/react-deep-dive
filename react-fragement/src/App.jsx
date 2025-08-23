@@ -1,18 +1,21 @@
 import './App.css'
+import "bootstrap/dist/css/bootstrap.min.css"
+import ConditionalRendering from "./ConditionalRendering"
+import BackendFrameworks from "./BackendFrameworks"
 
-function App() {
+const App = () => {
+  // map which will store name of some popular backend frameworks
+  let backendFrameworks = ["Node.js", "Django", "Spring Boot", "Ruby on Rails", "Flask"];
 
   return (
     <>
-      <h1>Backend Frameworks</h1>
+      {/* <ConditionalRendering /> */}
+      <h1 className='my-h1'>Backend Frameworks</h1>
 
-      <ul>
-        <li>Node.js</li>
-        <li>Django</li>
-        <li>Spring Boot</li>
-      </ul>
+      {/* Here, i am passing props from parent to child. */}
+      <BackendFrameworks frameworks ={backendFrameworks}/>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
