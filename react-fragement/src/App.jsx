@@ -1,20 +1,19 @@
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css"
-import ConditionalRendering from "./ConditionalRendering"
-import BackendFrameworks from "./BackendFrameworks"
+import FoodList from "./components/FoodList"
+import Container from './components/Container';
 
 const App = () => {
-  // map which will store name of some popular backend frameworks
-  let backendFrameworks = ["Node.js", "Django", "Spring Boot", "Ruby on Rails", "Flask"];
+  // map which will store name of healthy foods
+  let healthyFoods = ["bhat", "dal", "soya", "chicken", "panner", "tofu", "fish"];
 
   return (
-    <>
-      {/* <ConditionalRendering /> */}
-      <h1 className='my-h1'>Backend Frameworks</h1>
+    <Container>
+      <h1 className='my-h1'>Healthy Foods</h1>
 
       {/* Here, i am passing props from parent to child. */}
-      <BackendFrameworks frameworks ={backendFrameworks}/>
-    </>
+      <FoodList healthyFoods={healthyFoods} />
+    </Container>
   );
 };
 

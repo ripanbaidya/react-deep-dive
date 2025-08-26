@@ -1,10 +1,13 @@
 .my-h1 {
+  font-size: 1.5rem;
   font-weight: bold;
-  color: red;
-  cursor: pointer;
 }
 
-.my-h1:hover {
-  color: green;
+.container {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-
